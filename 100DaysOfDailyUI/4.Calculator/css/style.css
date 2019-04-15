@@ -1,0 +1,52 @@
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+}
+
+.theme {
+  padding:32px 0;
+}
+
+.working-area {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(142,36,170,0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+md-input-container {
+  background-color: #a8edea !important;
+  border-bottom: 4px solid black;
+}
+
+.calcButton {
+  font-size: 1.4em !important;
+  background-color: #a8edea !important;
+  padding: 16px 8px !important;
+  margin: 1px !important;
+  border: 4px solid black !important;
+}
+
+.other_buttons{
+  background-color: lightblue !important;
+}
+
+.other_buttons_color  {
+  color: blue !important;
+}
+
+.equal_button{
+  background-color: lightgoldenrodyellow !important;
+}
+
+#footer .footer_image {
+  height: 24px;
+  width:24px;
+  text-align: center;
+  padding: 4px;
+}
