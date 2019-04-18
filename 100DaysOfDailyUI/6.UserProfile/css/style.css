@@ -1,0 +1,34 @@
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.theme {
+  padding:32px 0 32px 0;
+}
+
+.working-area {
+  width: 50%;
+  height: 95%;
+  margin: 0 auto;
+  background-color: rgba(142,36,170,0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.profile-image{
+  border-radius:50%;
+  width:250px;
+  height: auto;
+  margin: auto 50%;
+}
+
+.submitButton{
+  background-color: #a8edea !important;
+}
+
+#footer .footer_image {
+  height: 24px;
+  width:24px;
+  text-align: center;
+  padding: 4px;
+}
