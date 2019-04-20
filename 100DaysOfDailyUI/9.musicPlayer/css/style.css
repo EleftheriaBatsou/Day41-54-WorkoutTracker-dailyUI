@@ -1,0 +1,30 @@
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.theme {
+  padding:32px 0;
+}
+
+.working-area {
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(142,36,170,0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.music-buttons {
+  height: 24px;
+  width: 24px;
+  
+  padding: 18px  6px;
+}
+
+#footer .footer_image {
+  height: 24px;
+  width:24px;
+  text-align: center;
+  padding: 4px;
+}
