@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Day 14 -  Countdown Timer - DailyUI</title>
+  
+  
+  <link rel='stylesheet' href='https://gitcdn.xyz/cdn/angular/bower-material/v1.1.18/angular-material.css'>
+<link rel='stylesheet' href='https://material.angularjs.org/1.1.18/docs.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>
+    function cdtd() {
+      var olympicGames = new Date("July 24, 2020 00:01:00");
+      var now = new Date();
+      var timeDiff = olympicGames.getTime() - now.getTime();
+      if (timeDiff <= 0) {
+                    clearTimeout(timer);
+        document.write("Olympic games are here!");
+        // Run any code needed for countdown completion here
+            }
+      var seconds = Math.floor(timeDiff / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+      hours %= 24;
+      minutes %= 60;
+      seconds %= 60;
+
+      document.getElementById("daysBox").innerHTML = days;
+      document.getElementById("hoursBox").innerHTML = hours;
+      document.getElementById("minsBox").innerHTML = minutes;
+      document.getElementById("secsBox").innerHTML = seconds;
+      var timer = setTimeout('cdtd()',1000);
+}
+  </script>
+</head>
+<body ng-app="BlankApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 14: Countdown Timer</div>
+
+  
+  <!--------  Working area --------->
+  <div class="working-area">
+    <h2 style="text-align: center"> Countdown Timer | Olympic games</h2>
+    
+    <div layout="row" class="theme" layout-align="center center">
+      <img src="https://images.pexels.com/photos/128457/pexels-photo-128457.jpeg?h=350&auto=compress&cs=tinysrgb" alt="olympic games counter">
+    </div>
+    
+    <div style="text-align: center">
+      <h2>24 July to 9 August 2020 in Tokyo</h2>
+      Days: <span id="daysBox"></span> |
+      Hours: <span id="hoursBox"></span> |
+      Minutes: <span id="minsBox"></span> |
+      Seconds: <span id="secsBox"></span>
+    </div>
+    
+   </div>
+  <script>cdtd();</script>
+  
+  
+  <!--------  Footer --------->
+  <div layout="row" layout-align="center center" class="background-color-green"><h3>Youtube tutorial <a href="https://youtu.be/1SQZl5raVvY" target="_blank"> here!</a></h3></div><br>
+  <div layout="row" layout-align="center center" class="background-color-green">Created by Eleftheria</div>
+  <div id="footer" layout="row" layout-align="center center" class="background-color-green">
+    
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+      <!-- Codepen -->
+      <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+      <!-- Twitter -->
+      <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+      <!-- Github -->
+      <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+    <!-- Website -->
+      <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+   </div>
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+  
+  
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+   angular.module('BlankApp', ['ngMaterial', 'ngMessages']);
+  </script>
+
+</body>
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-messages.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://gitcdn.xyz/cdn/angular/bower-material/v1.1.18/angular-material.js'></script>
+
+  
+
+</body>
+
+</html>
