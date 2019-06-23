@@ -1,0 +1,109 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+</head>
+<body ng-controller="AppCtrl" class="" ng-app="MyApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 16: Pop up/Overlay</div>
+
+  
+  <!--------  Working area --------->
+  <div class="working-area">
+    
+     <md-button class="clickmeButton md-raised" ng-click="showAdvanced($event)">
+      Click me
+    </md-button>
+    
+
+      
+  </div>
+  
+  <!--------  Footer --------->
+  <div layout="row" layout-align="center center" class="background-color-green"><h3>Youtube tutorial <a href="https://youtu.be/1SQZl5raVvY" target="_blank"> here!</a></h3></div><br>
+  <div layout="row" layout-align="center center" class="background-color-green">Created by Eleftheria</div>
+  <div id="footer" layout="row" layout-align="center center" class="background-color-green">
+    
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+      <!-- Codepen -->
+      <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+      <!-- Twitter -->
+      <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+      <!-- Github -->
+      <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+    <!-- Website -->
+      <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+   </div>
+  
+
+  
+<script type="text/ng-template" id="dialog.tmpl.html"><md-dialog aria-label="Another Form">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Yet Another Form</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content" style="width: auto;">
+    <form name="contactForm">
+      <div layout="row">
+        <md-input-container class="md-block">
+          <label>Name</label>
+          <input required="" name="name" ng-model="project.Name">
+          <div ng-messages="projectForm.Name.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+      </div>
+
+      <md-input-container class="md-block">
+        <label>Client Email</label>
+        <input required="" name="clientEmail" ng-model="project.clientEmail" minlength="4" maxlength="100" type="email">
+
+        <div ng-messages="projectForm.clientEmail.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength']">
+            Your email must be between 4 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-checkbox name="tos" ng-model="project.tos" required="">
+          I accept the terms of service.
+        </md-checkbox>
+        <div ng-messages="projectForm.tos.$error" multiple="" md-auto-hide="false">
+          <div ng-message="required">
+            You must accept the terms of service before you can proceed.
+          </div>
+        </div>
+      </md-input-container>
+
+    <md-dialog-actions layout="row">
+      <md-button type="submit" class="clickmeButton">Submit</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+</script>  
+   </div>
+
+</body>
+</html>
+
+<!--
+Copyright 2016-2019 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://material.angularjs.org/latest/license.
+-->
