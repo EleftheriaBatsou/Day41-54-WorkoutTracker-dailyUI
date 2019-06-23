@@ -1,0 +1,76 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+</head>
+<body ng-app="BlankApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 20: Location Tracker</div>
+
+  
+  <!--------  Working area --------->
+  <div class="working-area">
+    <div flex-gt-sm="100" flex="">
+      <md-toolbar layout="row" class="md-hue-5">
+        <div class="md-toolbar-tools"><span>Location Tracker</span></div>
+      </md-toolbar>
+      <md-toolbar layout="row" class="md-hue-1">
+        <div class="md-toolbar-tools" layout="column" >
+          <div>Completed Tasks: 5</div>
+          <div>Distance:  12Km</div>
+        </div>
+      </md-toolbar>
+    <md-content>  
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UuIYYroj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lawgimenez.me/content/images/2018/09/Google-Map-screenshot.png">
+            <div layout="row" layout-align="space-between end">
+              <md-button class="submitButton">Start trip</md-button>             
+              <md-button class="submitButton">My Activity</md-button>           
+              <md-button class="submitButton">End trip</md-button>
+            </div>
+      </md-content>
+     </div>
+  </div>
+  
+  <!--------  Footer --------->
+  <div layout="row" layout-align="center center" class="background-color-green"><h3>Youtube tutorial <a href="https://youtu.be/1SQZl5raVvY" target="_blank"> here!</a></h3></div><br>
+  <div layout="row" layout-align="center center" class="background-color-green">Created by Eleftheria</div>
+  <div id="footer" layout="row" layout-align="center center" class="background-color-green">
+    
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+      <!-- Codepen -->
+      <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+      <!-- Twitter -->
+      <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+      <!-- Github -->
+      <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+    <!-- Website -->
+      <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+   </div>
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('BlankApp', ['ngMaterial', 'ngMessages']);
+  </script>
+
+</body>
+</html>
