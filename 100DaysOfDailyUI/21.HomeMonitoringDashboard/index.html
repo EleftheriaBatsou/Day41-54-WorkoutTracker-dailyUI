@@ -1,0 +1,105 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+</head>
+<body ng-app="MyApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 21: Home Monitoring Dashboard</div>
+
+  
+  <!--------  Working area --------->
+  <div class="working-area">
+    <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs="" flex-gt-xs="50" layout="column">
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Wifi</span>
+            <span class="md-subhead">Provider: ASPN</span>
+            <span><p>Wi-Fi is a family of radio technologies that is commonly used for the wireless local area.</p></span>
+            <md-switch aria-label="Disabled active switch" ng-model="data.cb4">
+    on/off
+  </md-switch>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300/https://www.itpedia.nl/wp-content/uploads/2018/07/wifi-300x300.png"></div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Info</md-button>
+          <md-button>Speed</md-button>
+        </md-card-actions>
+      </md-card>
+      
+      
+    </div>
+    <div flex-xs="" flex-gt-xs="50" layout="column">
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Family Members</span>      
+          </md-card-title-text>
+          <md-card-title-media>
+        </md-card-title>
+          <span><img class="familyMemebers" src="http://cliparts101.com/files/367/63BA654AECB7FD26A32D08915C923030/avatar_nick.png"><b>Nick</b>: Currently at work
+          </span>          
+          <span><img class="familyMemebers"  src="https://i.etsystatic.com/6251240/r/il/5c790c/805391997/il_794xN.805391997_dq2l.jpg"><b>Mary</b>: Cooking dinner</span>        
+          <span><img class="familyMemebers"  src="https://cdn2.iconfinder.com/data/icons/avatar-colorize-i/100/people_character_avatar_smile_1-16-512.png"><b>Elen</b>: Out with firends</span>      
+          <span><img class="familyMemebers" src="https://thumbs.dreamstime.com/t/teen-boy-character-avatar-vector-illustration-design-79697606.jpg"><b>John</b>: Playing video games</span>
+          
+          
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Emergency</md-button>
+          <md-button>News</md-button>
+          <md-button>Weather</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
+      
+  </div>
+  
+  <!--------  Footer --------->
+  <div layout="row" layout-align="center center" class="background-color-green"><h3>Youtube tutorial <a href="https://youtu.be/1SQZl5raVvY" target="_blank"> here!</a></h3></div><br>
+  <div layout="row" layout-align="center center" class="background-color-green">Created by Eleftheria</div>
+  <div id="footer" layout="row" layout-align="center center" class="background-color-green">
+    
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+      <!-- Codepen -->
+      <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+      <!-- Twitter -->
+      <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+      <!-- Github -->
+      <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+    <!-- Website -->
+      <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+   </div>
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache']);
+  </script>
+
+</body>
+</html>
