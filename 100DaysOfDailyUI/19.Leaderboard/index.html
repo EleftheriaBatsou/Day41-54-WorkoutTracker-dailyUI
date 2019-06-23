@@ -1,0 +1,60 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+</head>
+<body ng-app="MyApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 19: Leaderboard</div>
+
+  
+   <!--------  Working area --------->
+  <div class="working-area" ng-controller="AppCtrl" >
+    <div flex-gt-sm="100" flex="">
+      <md-toolbar layout="row" class="md-hue-5">
+        <div class="md-toolbar-tools"><span>Leaderboard</span></div>
+      </md-toolbar>
+      
+      <md-content>
+        <md-list flex="">
+          <md-list-item class="md-3-line" ng-repeat="item in todos" ng-click="null">
+            <h4>{{ item.num }}</h4>
+            <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}">
+            <div class="md-list-item-text" layout="column">
+              <h3><b>{{ item.who }}</b> | <img ng-src="{{item.nationality}}?{{$index}}" class="nationality" alt="{{item.who}}"></h3>
+              <h4>{{ item.what }}</h4>
+              <p>{{ item.rank }}</p>
+            </div>
+          </md-list-item>
+        </md-list>
+      </md-content>
+    
+    </div> 
+  </div>
+  
+  <!--------  Footer --------->
+  <div layout="row" layout-align="center center" class="background-color-green"><h3>Youtube tutorial <a href="https://youtu.be/uWv-u1oxi3c" target="_blank"> here!</a></h3></div><br>
+  <div layout="row" layout-align="center center" class="background-color-green">Created by Eleftheria</div>
+  <div id="footer" layout="row" layout-align="center center" class="background-color-green">
+    
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+      <!-- Codepen -->
+      <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+      <!-- Youtube -->
+      <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+      <!-- Twitter -->
+      <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+      <!-- Github -->
+      <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+    <!-- Website -->
+      <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+   </div>
+
+</body>
+</html>
