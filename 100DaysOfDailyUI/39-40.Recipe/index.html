@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>D39, D40 - Recipe ,  Testimonials - DailyUI</title>
+  
+  
+  <link rel='stylesheet' href='https://gitcdn.xyz/cdn/angular/bower-material/v1.1.18/angular-material.css'>
+<link rel='stylesheet' href='https://material.angularjs.org/1.1.18/docs.css'>
+
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+</head>
+<body ng-controller="CookieAppCtrl" ng-app="CookieApp">
+  <!-- Your HTML content here -->
+  
+  <!--------  Today's theme --------->
+  <div layout="row" class="theme" layout-align="center center">Day 39: Recipe, Day40: Testimonials</div>
+
+  
+  <!--------  Working area --------->
+  <div class="working-area">
+    
+    <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h3>
+        <span>Chocolate cookies</span>
+      </h3>
+    </div>
+  </md-toolbar>
+    
+    <div layout="row" layout-align="center center">
+      <img src="https://images.media-allrecipes.com/userphotos/560x315/480783.jpg">
+    </div>
+    
+    <md-toolbar class="md-tall md-accent">
+      <h5 class="">
+        PECANS CHOCOLATE CHOCOLATE CHIP COOKIES
+      </h5>
+      <p>July 25, 2019 - by Elli <br> 17 Comments</p>
+    </md-toolbar>
+   
+    <div layout="row" layout-align="center center">
+      <md-button class="submitButton">
+        <a href="https://akispetretzikis.com/en/categories/mpiskota-2/mpiskota-me-kinoa" target="_blank">Show me the recipe</a></md-button>
+    </div>
+  
+    <div layout="row" layout-align="center center">
+      <md-button ng-click="showAdvanced($event)" class="submitButton md-raised">Rate this recipe</md-button>
+    </div>
+      
+  </div>
+  
+  <!--------  Footer --------->
+  <div id="footer_container">
+    <div layout="row" layout-align="center center"><h3>Youtube tutorial <a href="https://youtu.be/1SQZl5raVvY" target="_blank"> here!</a></h3></div><br>
+    <div layout="row" layout-align="center center">Created by Eleftheria</div>
+    <div layout="row" layout-align="center center" class="footer">
+
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/39/39714.svg" class="footer_image" alt="linkedin" title="linkedin"></a> ~
+        <!-- Codepen -->
+        <a href="https://codepen.io/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="footer_image" alt="codepen" title="codepen"></a> ~
+        <!-- Youtube -->
+        <a href="https://www.youtube.com/c/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/733/733646.svg" class="footer_image" alt="youtube" title="youtube"></a> ~
+        <!-- Twitter -->
+        <a href="https://twitter.com/BatsouElef" target="_blank"><img src="https://image.flaticon.com/icons/svg/8/8800.svg" class="footer_image" alt="twitter" title="twitter"></a> ~
+        <!-- Github -->
+        <a href="https://github.com/EleftheriaBatsou" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="footer_image" alt="github" title="github"></a> ~ 
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/eleftheriabatsou/" target="_blank"><img src="https://image.flaticon.com/icons/svg/69/69366.svg" class="footer_image" alt="instagram" title="instagram"></a> ~
+      <!-- Website -->
+        <a href="http://www.eleftheriabatsou.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/484/484101.svg" class="footer_image" alt="website" title="website"></a>
+    </div>
+
+  
+    
+<script type="text/ng-template" id="dialog.tmpl.html">
+  <md-dialog aria-label="Testimonial, a.k.a. review">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Testimonial, a.k.a. Review</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content" style="width: auto;">
+    <form name="contactForm">
+      <div layout="row">
+        <md-input-container class="md-block">
+          <label>Name</label>
+          <input required="" name="name" ng-model="project.Name">
+          <div ng-messages="projectForm.Name.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+      </div>
+
+      <md-input-container class="md-block">
+        <label>Review</label>
+        <input required="" name="review" ng-model="project.review" minlength="4" maxlength="200" type="textarea">
+
+        <div ng-messages="projectForm.review.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength']">
+            Your review must be between 4 and 200 characters long
+          </div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-checkbox name="tos" ng-model="project.tos" required="">
+          I accept the terms of service.
+        </md-checkbox>
+        <div ng-messages="projectForm.tos.$error" multiple="" md-auto-hide="false">
+          <div ng-message="required">
+            You must accept the terms of service before you can proceed.
+          </div>
+        </div>
+      </md-input-container>
+
+    <md-dialog-actions layout="row">
+      <md-button type="submit" class="clickmeButton">Submit</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+</script>  
+  </div>
+</body>
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-messages.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://gitcdn.xyz/cdn/angular/bower-material/v1.1.18/angular-material.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
