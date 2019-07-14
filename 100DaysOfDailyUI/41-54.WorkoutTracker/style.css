@@ -1,0 +1,76 @@
+body {
+ background-image: linear-gradient(to right bottom, #dc1767, #ac3086, #6f428f, #31457f, #003e60);
+  color: white !important;
+}
+
+.theme {
+  padding: 32px 0;
+  margin: auto 32px;
+  font-family: 'Pacifico', cursive; 
+}
+
+.working-area {
+  width: 370px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right bottom, #ff7cb1, #e69ae3, #c3b7ff, #aacfff, #abe1ff);
+  border-radius: 8px;
+}
+
+.subheaderdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; 
+}
+
+.navbar-icon{
+  width: 64px;
+  height: auto; 
+  margin-top: -6px;
+}
+
+.logo-design {
+  width: 50px;
+  height: 50px;
+  background-color: #abe1ff;
+  
+  clip-path: polygon(43% 25%, 36% 13%, 40% 1%, 68% 0%, 72% 15%, 67% 25%, 75% 36%, 99% 36%, 99% 56%, 76% 48%, 72% 68%, 98% 100%, 67% 100%, 59% 79%, 42% 99%, 28% 100%, 42% 69%, 43% 49%, 12% 57%, 13% 44%, 42% 35%);
+}
+
+md-select{
+  margin-left: -80px !important;
+
+}
+
+md-option{
+  padding: 8px !important;
+}
+
+h4 span:hover{
+  color:pink;
+}
+
+.infoCard {
+  right: 44px;
+}
+
+
+#footer_container {
+  font-family: 'Pacifico', cursive; 
+}
+.footer .footer_image {
+  height: 24px;
+  width:24px;
+  text-align: center;
+  padding: 4px;
+ }
+
+.footer .footer_image:hover,
+#footer_container a:hover {
+  background-color: lightblue;
+}
+#footer_container a:link,
+#footer_container a:active{
+  color: #dc1767;
+}
